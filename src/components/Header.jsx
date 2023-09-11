@@ -1,11 +1,11 @@
 export default function Header() {
   return (
     <div>
-      <div className="header">
+      <header className="header">
         <img className="troll-img" src="./Troll Face.png" />
-        <span className="Meme-title">Meme Generator</span>
-        <span className="react-title">React Course - Project 3 </span>
-      </div>
+        <h2 className="Meme-title"> Meme Generator</h2>
+        <h4 className="react-title">React Course - Project 3 </h4>
+      </header>
     </div>
   );
 }

@@ -32,32 +32,25 @@ body {
 }
 input::placeholder {
   color: black;
-}
-.text-search {
-  display: flex;
-  justify-content: center;
-  gap: 17px;
-}
-#search-bar,
-#search-bar2 {
-  width: 230px;
-  height: 35px;
   font-family: Karla;
   font-size: 12px;
-  padding: 10px 11px 11px;
-  margin: 36px 0px 15px;
+  text-indent: 5px;
 }
+.text-search {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-top: 36px;
+}
+
 .meme-button {
-  display: block;
-  margin: 0 auto;
+  grid-column: 1/-1;
   color: white;
-  width: 477px;
-  height: 40px;
   font-family: Karla;
   font-size: 16px;
   letter-spacing: -1.6px;
   border-radius: 5px;
   font-weight: 700;
-  border: #672280;
+  border: none;
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
 }
