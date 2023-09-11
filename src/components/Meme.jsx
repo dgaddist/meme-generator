@@ -1,3 +1,5 @@
+import memesData from "../memeData.jsx";
+
 export default function Meme() {
   return (
     <div>
