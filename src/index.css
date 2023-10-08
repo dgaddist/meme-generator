@@ -40,9 +40,14 @@ input::placeholder {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
-  margin-top: 36px;
+  margin-top: 16px;
 }
-
+.memeimg {
+  max-width: 80%;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+}
 .meme-button {
   grid-column: 1/-1;
   color: white;
@@ -52,5 +57,32 @@ input::placeholder {
   border-radius: 5px;
   font-weight: 700;
   border: none;
+  cursor: pointer;
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 200px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
