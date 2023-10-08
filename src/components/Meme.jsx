@@ -7,12 +7,13 @@ export default function Meme() {
     bottomText: "",
     randomImage: "./memeimg.png",
   });
-  console.log(meme);
+
   function handleText(event) {
+    const { name, value } = event.target;
     setMemeImage((prevMemeImage) => {
       return {
         ...prevMemeImage,
-        [event.target.name]: event.target.value,
+        [name]: value,
       };
     });
   }
@@ -58,8 +59,8 @@ export default function Meme() {
       </main>
       <div className="meme">
         <img src={meme.randomImage} className="memeimg" />
-        <h2 className="meme--text top">One does not simply</h2>
-        <h2 className="meme--text bottom">Walk into Mordor</h2>
+        <h2 className="meme--text top">{meme.topText}</h2>
+        <h2 className="meme--text bottom">{meme.bottomText}</h2>
       </div>
     </div>
   );
