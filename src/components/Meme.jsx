@@ -9,7 +9,7 @@ export default function Meme() {
   });
   console.log(meme);
   function handleText(event) {
-    setTextInput((prevMemeImage) => {
+    setMemeImage((prevMemeImage) => {
       return {
         ...prevMemeImage,
         [event.target.name]: event.target.value,
@@ -40,6 +40,7 @@ export default function Meme() {
             id="search-bar"
             onChange={handleText}
             name="topText"
+            value={meme.topText}
           />
           <input
             type="text"
@@ -48,6 +49,7 @@ export default function Meme() {
             id="search-bar2"
             onChange={handleText}
             name="bottomText"
+            value={meme.bottomText}
           />
           <button className="meme-button" onClick={memeButtonClick}>
             Get a new meme image 🖼️
